@@ -1,0 +1,10 @@
+[Unit]
+Description=Midori browser
+
+[Service]
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/dwb -x 'open http://bighops.com/taplist-gastropub/big.html;; fullscreen;;'
+ExecStop=/usr/bin/dwb -x 'save_session;;'
+
+[Install]
+WantedBy=mystuff.target

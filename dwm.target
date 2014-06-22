@@ -1,0 +1,9 @@
+[Unit]
+Description=DWM
+Wants=xorg.target
+Wants=mystuff.target
+Requires=dbus.socket
+AllowIsolate=True
+
+[Install]
+Alias=default.target

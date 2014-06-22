@@ -1,0 +1,7 @@
+[Unit]
+Description=Refresh Taplist
+
+[Service]
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/dwb -x 'reload;;'
+Restart=on-failure

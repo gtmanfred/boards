@@ -1,0 +1,9 @@
+[Unit]
+Description=Refresh Taplist Timer
+
+[Timer]
+OnUnitInactiveSec=10m
+OnStartupSec=10m
+
+[Install]
+WantedBy=mystuff.target

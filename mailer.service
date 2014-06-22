@@ -1,0 +1,10 @@
+[Unit]
+Description=Ip mailer daemon
+
+[Service]
+ExecStart=/home/bighops/bin/mailer
+RemainAfterExit=yes
+
+[Install]
+WantedBy=mystuff.target
+

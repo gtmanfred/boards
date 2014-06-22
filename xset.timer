@@ -1,0 +1,9 @@
+[Unit]
+Description=Make sure xset gets set
+
+[Timer]
+OnUnitInactiveSec=10m
+OnStartupSec=1m
+
+[Install]
+WantedBy=mystuff.target

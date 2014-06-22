@@ -1,0 +1,14 @@
+[Unit]
+Description=Disable Screensaver
+
+[Service]
+Type=oneshot
+Environment=DISPLAY=:0
+RemainAfterExit=True
+ExecStart=/usr/bin/xrdb -load /home/bighops/.Xresources
+ExecStart=/usr/bin/xset s 0 0
+ExecStart=/usr/bin/xset -dpms
+ExecStart=/usr/bin/xset s noblank
+
+[Install]
+WantedBy=mystuff.service
